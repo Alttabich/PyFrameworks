@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Сравнение — PyFrameworks</title>
+
+  <script type="module" crossorigin src="/assets/main-CqTWvVmO.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-CIjdXNmc.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/index.html" class="logo">PyFrameworks</a>
+
+    <nav class="nav">
+      <a class="nav-link" href="/index.html">Главная</a>
+      <a class="nav-link" href="/compare.html">Сравнение</a>
+      <a class="nav-link" href="/contact.html">Контакты</a>
+
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container compare-page">
+
+  <!-- HERO -->
+  <section class="compare-hero">
+    <h1>Сравнение Python-фреймворков</h1>
+    <p class="subtitle">
+      Django, FastAPI, Flask и Litestar — выбираем лучший инструмент под задачу
+    </p>
+  </section>
+
+  <!-- GRID CARDS -->
+  <section class="compare-grid">
+
+    <article class="card framework-card django">
+      <h2>Django</h2>
+      <p class="tag">Full-stack</p>
+
+      <ul>
+        <li>✔ ORM</li>
+        <li>✔ Админка</li>
+        <li>✔ Безопасность</li>
+        <li>✖ Тяжёлый</li>
+      </ul>
+
+      <p class="desc">Лучше всего для больших проектов и монолитов.</p>
+    </article>
+
+    <article class="card framework-card fastapi">
+      <h2>FastAPI</h2>
+      <p class="tag">API-first</p>
+
+      <ul>
+        <li>✔ Async</li>
+        <li>✔ Скорость</li>
+        <li>✔ Docs auto</li>
+        <li>✖ Мало “из коробки”</li>
+      </ul>
+
+      <p class="desc">Идеален для API и микросервисов.</p>
+    </article>
+
+    <article class="card framework-card flask">
+      <h2>Flask</h2>
+      <p class="tag">Micro</p>
+
+      <ul>
+        <li>✔ Лёгкий</li>
+        <li>✔ Гибкий</li>
+        <li>✔ Простота</li>
+        <li>✖ Всё вручную</li>
+      </ul>
+
+      <p class="desc">Подходит для MVP и небольших проектов.</p>
+    </article>
+
+    <article class="card framework-card litestar">
+      <h2>Litestar</h2>
+      <p class="tag">Modern async</p>
+
+      <ul>
+        <li>✔ Быстрый</li>
+        <li>✔ Async-first</li>
+        <li>✔ Архитектура</li>
+        <li>✖ Молодой</li>
+      </ul>
+
+      <p class="desc">Новый стандарт для high-performance backend.</p>
+    </article>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Сайт сделан с помощью UnoCSS</p>
+  </div>
+</footer>
+
+</body>
+</html>
