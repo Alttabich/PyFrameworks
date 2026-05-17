@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Django — PyFrameworks</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="logo">PyFrameworks</a>
+
+      <nav class="nav">
+        <a class="nav-link" href="/index.html">Главная</a>
+        <a class="nav-link" href="/compare.html">Сравнение</a>
+        <a class="nav-link" href="/contact.html">Контакты</a>
+		<button id="themeToggle" class="theme-btn" aria-label="Переключить тему">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+<main class="container framework-page">
+
+  <!-- HEADER BLOCK -->
+  <section class="framework-header">
+
+    <img
+      class="framework-logo"
+      src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg"
+      alt="Framework logo"
+      loading="lazy"
+    />
+
+    <div>
+      <h1>Django</h1>
+      <p class="subtitle">
+        Мощный backend-фреймворк для создания масштабируемых веб-приложений.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- DESCRIPTION -->
+  <section class="card">
+    <h2>Описание</h2>
+    <p>
+      Django — это высокоуровневый Python-фреймворк, который позволяет быстро создавать
+      безопасные и масштабируемые веб-приложения. Он следует принципу “batteries included”,
+      предоставляя множество встроенных инструментов.
+    </p>
+  </section>
+
+  <!-- INSTALLATION -->
+  <section class="card">
+    <h2>Установка</h2>
+    <pre><code>pip install django</code></pre>
+    <p>После установки можно создать проект:</p>
+    <pre><code>django-admin startproject myproject</code></pre>
+  </section>
+<section class="card">
+  <h2>Примеры использования</h2>
+
+  <p>Простой пример создания view в Django:</p>
+
+  <pre><code>
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Hello, Django!")
+  </code></pre>
+
+  <p>URL маршрутизация:</p>
+
+  <pre><code>
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path("", views.home),
+]
+  </code></pre>
+</section>
+  <!-- DOCS -->
+  <section class="card">
+    <h2>Документация</h2>
+    <a class="btn" href="https://docs.djangoproject.com/">
+      Открыть документацию
+    </a>
+  </section>
+
+  <!-- PROS / CONS -->
+  <section class="grid-2">
+
+    <div class="card">
+      <h2>Плюсы</h2>
+      <ul>
+        <li>Быстрая разработка</li>
+        <li>Встроенная админка</li>
+        <li>ORM</li>
+        <li>Безопасность</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Минусы</h2>
+      <ul>
+        <li>Сложнее для маленьких проектов</li>
+        <li>Монолитная архитектура</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- AUDIENCE -->
+  <section class="card">
+    <h2>Для кого подходит</h2>
+    <p>
+      Django лучше всего подходит для больших проектов: интернет-магазинов,
+      CRM-систем, новостных сайтов и корпоративных платформ.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Сайт сделан с помощью UnoCSS, 2026</p>
+  </div>
+</footer>
+
+  <script type="module" src="/js/main.js"></script>
+
+</body>
+</html>
