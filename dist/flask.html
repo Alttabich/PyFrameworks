@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flask — PyFrameworks</title>
+
+  <script type="module" crossorigin src="/PyFrameworks/assets/main-CqTWvVmO.js"></script>
+  <link rel="stylesheet" crossorigin href="/PyFrameworks/assets/main-CIjdXNmc.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/index.html" class="logo">PyFrameworks</a>
+
+    <nav class="nav">
+      <a class="nav-link" href="/index.html">Главная</a>
+      <a class="nav-link" href="/compare.html">Сравнение</a>
+      <a class="nav-link" href="/contact.html">Контакты</a>
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container framework-page">
+
+  <section class="framework-header">
+    <img class="framework-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg"alt="Flask logo">
+
+    <div>
+		<h1>Flask</h1>
+		<p class="subtitle">Минималистичный микрофреймворк.</p>
+    </div>
+  </section>
+
+ 
+
+
+<section class="card">
+  <h2>Описание</h2>
+  <p>
+    Flask — лёгкий микрофреймворк для Python, который даёт полную свободу архитектуры.
+  </p>
+</section>
+
+<section class="card">
+  <h2>Установка</h2>
+  <pre><code>pip install flask</code></pre>
+</section>
+
+<section class="card">
+  <h2>Примеры использования</h2>
+  <pre><code>
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "Hello Flask"
+  </code></pre>
+</section>
+
+<section class="card">
+  <h2>Документация</h2>
+  <a class="btn" href="https://flask.palletsprojects.com/">Открыть документацию</a>
+</section>
+
+<section class="grid-2">
+
+  <div class="card">
+    <h2>Плюсы</h2>
+    <ul>
+      <li>Простой</li>
+      <li>Гибкий</li>
+      <li>Минимальный overhead</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Минусы</h2>
+    <ul>
+      <li>Мало встроенного</li>
+      <li>Нужно всё собирать самому</li>
+    </ul>
+  </div>
+
+</section>
+
+<section class="card">
+  <h2>Для кого подходит</h2>
+  <p>Небольшие проекты, MVP, прототипы.</p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Сайт сделан с помощью UnoCSS</p>
+  </div>
+</footer>
+
+</body>
+</html>

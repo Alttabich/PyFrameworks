@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FastAPI — PyFrameworks</title>
+
+  <script type="module" crossorigin src="/PyFrameworks/assets/main-CqTWvVmO.js"></script>
+  <link rel="stylesheet" crossorigin href="/PyFrameworks/assets/main-CIjdXNmc.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/index.html" class="logo">PyFrameworks</a>
+
+    <nav class="nav">
+      <a class="nav-link" href="/index.html">Главная</a>
+      <a class="nav-link" href="/compare.html">Сравнение</a>
+      <a class="nav-link" href="/contact.html">Контакты</a>
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container framework-page">
+
+  <section class="framework-header">
+    <img class="framework-logo"
+      src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png"
+      alt="FastAPI logo">
+    <div>
+      <h1>FastAPI</h1>
+      <p class="subtitle">Современный async-фреймворк для создания API.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Описание</h2>
+    <p>
+      FastAPI — это современный Python-фреймворк для создания API с высокой производительностью.
+      Основан на Starlette и Pydantic.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Установка</h2>
+    <pre><code>pip install fastapi uvicorn</code></pre>
+    <p>Запуск сервера:</p>
+    <pre><code>uvicorn main:app --reload</code></pre>
+  </section>
+
+  <section class="card">
+    <h2>Примеры использования</h2>
+
+    <p>Простой API:</p>
+
+    <pre><code>
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello FastAPI"}
+    </code></pre>
+  </section>
+
+  <section class="card">
+    <h2>Документация</h2>
+    <a class="btn" href="https://fastapi.tiangolo.com/">Открыть документацию</a>
+  </section>
+
+  <section class="grid-2">
+
+    <div class="card">
+      <h2>Плюсы</h2>
+      <ul>
+        <li>Очень быстрый</li>
+        <li>Async поддержка</li>
+        <li>Автодокументация</li>
+        <li>Типизация</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Минусы</h2>
+      <ul>
+        <li>Молодой экосистемой</li>
+        <li>Меньше “встроенных решений”</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section class="card">
+    <h2>Для кого подходит</h2>
+    <p>API, микросервисы, high-performance backend.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Сайт сделан с помощью UnoCSS</p>
+  </div>
+</footer>
+
+</body>
+</html>
